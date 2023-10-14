@@ -10,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
 model Issue {
   id          Int      @id @default(autoincrement())
   title       String   @db.VarChar(255)
