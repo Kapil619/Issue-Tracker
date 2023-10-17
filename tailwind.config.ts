@@ -16,6 +16,8 @@ const config: Config = {
       display: ['responsive'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 export default config
