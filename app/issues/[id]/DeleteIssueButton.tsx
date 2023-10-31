@@ -15,7 +15,7 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
   const deleteIssue = async () => {
     try {
       setisDeleting(true);
-      await axios.delete(`/api/issues/${issueId}`);
+      await axios.delete("/api/issues" + issueId);
       router.push("/issues/list");
       router.refresh();
     } catch (error) {
@@ -33,12 +33,12 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
         <AlertDialog.Content>
           <AlertDialog.Title>Error</AlertDialog.Title>
           <AlertDialog.Description>
-            This issue couldn't be deleted
+            This issue could not be deleted
           </AlertDialog.Description>
           <Button
             color="gray"
             variant="soft"
-            mt={"2"}
+            mt="2"
             onClick={() => seterror(false)}
           >
             OK
@@ -49,8 +49,7 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
   );
 };
 
-{
-  /* expected single child error 
+/* expected single child error 
    <AlertDialog.Root>
   <AlertDialog.Trigger>
     <Button color="red">Delete Issue</Button>;
@@ -72,5 +71,5 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
     </Flex>
   </AlertDialog.Content>
 </AlertDialog.Root>; */
-}
+
 export default DeleteIssueButton;
