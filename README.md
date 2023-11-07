@@ -1,11 +1,17 @@
 ## Issue Tracker Web Application
 
-Created this Fullstack web application with Nextjs13, MYSQL, Prisma, RadixUi, TailwindCSS and numerous other packages.
+#Techstack: Nextjs13, MYSQL, Prisma, RadixUI, TailwindCSS.
 
-The Frontend is handled by Next13 and prisma for connecting to the database .
-Implemented secure Login/Logout using Google's OAuth . Users can create ,update and delete issues faced by them.. 
+It's a Full stack web application.
+
+##Features: 
+Users can create ,update and delete issues faced by them.. 
 Can assign issues to other users. 
 Summary and Latest Issues are dynamically rendered  on the dashboard upon data changes.
+
+
+The Frontend is handled by Next13 and prisma for connecting to the MYSQL database .
+Implemented secure Login/Logout using Google's OAuth. RadixUI & TailwindCSS for the styling.
 
 It is deployed on Vercel: https://issue-tracker-kapil619.vercel.app/
 
