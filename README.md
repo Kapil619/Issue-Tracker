@@ -1,10 +1,10 @@
 ## Issue Tracker Web Application
 
-#Techstack: Nextjs13, MYSQL, Prisma, RadixUI, TailwindCSS.
+### Techstack: Nextjs13, MYSQL, Prisma, RadixUI, TailwindCSS.
 
 It's a Full stack web application.
 
-##Features: 
+### Features: 
 Users can create ,update and delete issues faced by them.. 
 Can assign issues to other users. 
 Summary and Latest Issues are dynamically rendered  on the dashboard upon data changes.
